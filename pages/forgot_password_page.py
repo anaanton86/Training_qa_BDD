@@ -15,7 +15,12 @@ class ForgotPasswordPage(BasePage):
 
     def set_email(self, email):
         self.wait_for_elem(*self.EMAIL_INPUT)
+        # self.driver.find_element(*self.EMAIL_INPUT).clear()
         self.driver.find_element(*self.EMAIL_INPUT).send_keys(email)
+
+    def clear_email(self):
+        self.wait_for_elem(*self.EMAIL_INPUT)
+        self.driver.find_element(*self.EMAIL_INPUT).clear()
 
     def click_send_email_button(self):
         self.wait_for_elem(*self.SEND_EMAIL_BUTTON)

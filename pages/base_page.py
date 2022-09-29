@@ -17,8 +17,8 @@ class BasePage(Browser, TestCase):
         actual = self.driver.current_url
         assert actual == expected, "page url not ok"
 
-    def press_enter(self, elem):
-        elem.send_keys(Keys.ENTER)
+    # def press_enter(self, elem):
+    #     elem.send_keys(Keys.ENTER)
 
 
 

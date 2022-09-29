@@ -30,3 +30,6 @@ def step_impl(context):
     context.sign_in_page.set_password()
     context.sign_in_page.click_login_button()
 
+@when('Sign in: I click on sign up link')
+def step_impl(context):
+    context.sign_in_page.click_sign_up_link()

@@ -5,3 +5,4 @@ pip install webdriver-manager
 
 run test
 behave -f html -o behave-report.html --tags=smoke
+behave -f html -o behave-report.html --tags=live
